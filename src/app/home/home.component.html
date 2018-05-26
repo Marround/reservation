@@ -1,3 +1,8 @@
-<h1>{{ "home.title" | translate }}</h1>
-<p>{{ "home.text" | translate }}</p>
+<form #reservation="ngForm">
+    <mat-form-field>
+        <input matInput #reservation [formControl]="value" (keyup)="onEnter($event)" name="reservation" placeholder="reservation" autofocus>
+        <mat-hint align="end">{{reservation.value}}</mat-hint>
+        <mat-error *ngIf="validatorItem(value)">{{validatorItem(value)}}</mat-error>
+    </mat-form-field>
+</form>
 

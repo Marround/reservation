@@ -6,11 +6,11 @@ export function metaFactory(): MetaLoader {
     callback: (key: string): string => key,
     pageTitlePositioning: PageTitlePositioning.PrependPageTitle,
     pageTitleSeparator: ' | ',
-    applicationName: 'App Universal',
+    applicationName: 'App Reservation',
     defaults: {
       title: 'Default page title',
       description: 'Default description',
-      'og:site_name': 'App site Universal',
+      'og:site_name': 'App site Reservation',
       'og:type': 'website',
       'og:locale': 'ru_RU',
       'og:locale:alternate': 'en_GB'
