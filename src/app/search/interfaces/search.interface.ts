@@ -1,4 +1,4 @@
-import {Movie} from './movie.interface';
+import {Movie} from '../../shared-components/interfaces/movie.interface';
 
 export interface SearchMovie {
     Error: string;

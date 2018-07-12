@@ -1,51 +1,6 @@
 <form #searchomdb="ngForm">
     <mat-form-field>
-        <input matInput #searchInput name="reservation" placeholder="Введите название" autofocus value="guardians">
+        <input matInput #searchInput name="reservation" placeholder="Введите название" autofocus>
     </mat-form-field>
 </form>
-<div class="example-container mat-elevation-z8">
-    <mat-table #table [dataSource]="dataSource">
-
-        <ng-container matColumnDef="buttons">
-            <mat-header-cell *matHeaderCellDef> Poster </mat-header-cell>
-            <mat-cell *matCellDef="let row">
-                <button mat-icon-button>
-                    <mat-icon aria-label="Example icon-button with a heart icon">add</mat-icon>
-                </button>
-            </mat-cell>
-        </ng-container>
-
-        <!-- Position Column -->
-        <ng-container matColumnDef="Poster">
-            <mat-header-cell *matHeaderCellDef> Poster </mat-header-cell>
-            <mat-cell *matCellDef="let row"><a routerLink="{{row.imdbID}}"><img src="{{row.Poster}}" alt="" style="max-width: 50px;"></a></mat-cell>
-        </ng-container>
-
-        <!-- Name Column -->
-        <ng-container matColumnDef="Title">
-            <mat-header-cell *matHeaderCellDef> Title </mat-header-cell>
-            <mat-cell *matCellDef="let row"> {{row.Title}} </mat-cell>
-        </ng-container>
-
-        <!-- Weight Column -->
-        <ng-container matColumnDef="Year">
-            <mat-header-cell *matHeaderCellDef> Year </mat-header-cell>
-            <mat-cell *matCellDef="let row"> {{row.Year}} </mat-cell>
-        </ng-container>
-
-        <!-- Symbol Column -->
-        <ng-container matColumnDef="Type">
-            <mat-header-cell *matHeaderCellDef> Type </mat-header-cell>
-            <mat-cell *matCellDef="let row"> {{row.Type}} </mat-cell>
-        </ng-container>
-
-        <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
-        <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
-    </mat-table>
-
-    <mat-paginator #paginator
-                   [pageSize]="10"
-                   [pageSizeOptions]="[5, 10, 20]"
-                   [showFirstLastButtons]="true">
-    </mat-paginator>
-</div>
+<app-movie-list [movieList]="movieList" [flag]="true"></app-movie-list>

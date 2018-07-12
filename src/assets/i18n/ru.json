@@ -3,6 +3,7 @@
   "sidebar": {
     "home": "Главная",
     "search": "Поиск",
+    "collection": "Коллекция",
     "mock": "Мокап",
     "back-http": "Http на бэк"
   },

@@ -3,7 +3,7 @@ import {TransferHttpService} from '@shared/transfer-http';
 import {map, tap} from 'rxjs/operators';
 import {SearchMovie} from '../interfaces/search.interface';
 import {BehaviorSubject} from 'rxjs/BehaviorSubject';
-import {Movie} from '../interfaces/movie.interface';
+import {Movie} from '../../shared-components/interfaces/movie.interface';
 
 @Injectable()
 export class SearchService {

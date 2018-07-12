@@ -3,6 +3,7 @@
   "sidebar": {
     "home": "Home",
     "search": "Search",
+    "collection": "Collection",
     "mock": "Mock",
     "back-http": "Back http"
   },

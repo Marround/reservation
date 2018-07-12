@@ -12,16 +12,14 @@ import {
     MatTableModule
 } from '@angular/material';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
-import {SearchRoutes} from './search.routing';
-import {SearchComponent} from './search.component';
-import {SearchService} from './providers/search.service';
-import {MovieInfoComponent} from './movieinfo/movie-info.component';
+import {CollectionComponent} from './collection.component';
+import {CollectionRoutes} from './collection.routing';
 import {ScModule} from '../shared-components/sc.module';
 
 @NgModule({
     imports: [
         CommonModule,
-        SearchRoutes,
+        CollectionRoutes,
         TranslateModule.forChild(),
         ScModule,
         FormsModule,
@@ -34,10 +32,7 @@ import {ScModule} from '../shared-components/sc.module';
         MatButtonModule,
         MatCardModule
     ],
-    declarations: [SearchComponent, MovieInfoComponent],
-    providers: [
-        SearchService
-    ]
+    declarations: [CollectionComponent]
 })
-export class SearchModule {
+export class CollectionModule {
 }
