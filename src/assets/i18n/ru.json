@@ -2,6 +2,7 @@
   "loading": "Загрузка",
   "sidebar": {
     "home": "Главная",
+    "search": "Поиск",
     "mock": "Мокап",
     "back-http": "Http на бэк"
   },

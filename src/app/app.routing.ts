@@ -8,6 +8,7 @@ const routes: Routes = [
   {
     path: '', component: WrapperComponent, canActivateChild: [MetaGuard], children: [
       { path: 'home', loadChildren: './home/home.module#HomeModule' },
+      { path: 'search', loadChildren: './search/search.module#SearchModule' },
       { path: '**', loadChildren: './not-found/not-found.module#NotFoundModule' },
     ]
   }

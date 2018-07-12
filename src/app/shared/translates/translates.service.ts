@@ -10,7 +10,7 @@ const LANGUAGES: ITranslatesLanguage[] = [
   { value: 'en', name: 'English' }
 ];
 const LANG_LIST: string[] = ['en', 'ru'];
-const DEFAULT_LANG: string = 'en';
+const DEFAULT_LANG: string = 'ru';
 
 @Injectable()
 export class TranslatesService {

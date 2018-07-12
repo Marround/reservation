@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 const LINKS: any[] = [
   { link: '/home', name: 'home', icon: 'home' },
+  { link: '/search', name: 'search', icon: 'search' },
 ];
 
 @Component({

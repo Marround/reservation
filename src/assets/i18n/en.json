@@ -2,6 +2,7 @@
   "loading": "Loading",
   "sidebar": {
     "home": "Home",
+    "search": "Search",
     "mock": "Mock",
     "back-http": "Back http"
   },
